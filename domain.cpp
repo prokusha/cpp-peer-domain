@@ -83,8 +83,8 @@ vector<Domain> ReadDomains(istream& input, size_t count) {
     vector<Domain> result;
     result.reserve(count);
 
+    string domain;
     for (size_t i = 0; i < count; ++i) {
-        string domain;
         getline(input, domain);
         result.push_back(Domain(domain));
     }
